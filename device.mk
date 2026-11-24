@@ -4,6 +4,7 @@
 #
 
 $(call inherit-product, frameworks/native/build/tablet-7in-xhdpi-2048-dalvik-heap.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal

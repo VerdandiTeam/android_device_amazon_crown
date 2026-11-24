@@ -7,4 +7,8 @@ LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),crown)
 include $(call all-makefiles-under,$(LOCAL_PATH))
+
+hybris-hal: \
+    $(TARGET_ROOT_OUT)/default.prop \
+    $(TARGET_OUT)/etc/init/hw/init.zygote32.rc
 endif
